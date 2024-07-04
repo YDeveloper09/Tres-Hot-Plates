@@ -3,7 +3,7 @@ import loadContactPage from './loadContactPage.js';
 import loadMenuPage from './loadMenuPage.js';
 import './styles.css';
 import { initializeScrollReveal } from './scroll.js';
-import './images';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   

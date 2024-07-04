@@ -1,4 +1,4 @@
-
+import gP from './images/garlic-pepper.png'
 export default function loadMenuPage() {
         function createElement(tag, className = '', textContent = '') {
           const element = document.createElement(tag);
@@ -31,7 +31,7 @@ export default function loadMenuPage() {
         const garlicpepperCard = createElement("div", "card");
         const gpdivImage = createElement("div", "image");
         const gpImage = createElement("img", "text");
-        gpImage.src = "/src/images/garlic-pepper.png";
+        gpImage.src = gP;
         appendChildren(gpdivImage, gpImage);
         const gpTitle = createElement("span", "title","Sizzling Garlic Pepper Beef");
         const gpPrice = createElement("span", "price","P99.00");
