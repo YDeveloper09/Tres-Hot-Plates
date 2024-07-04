@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loadHomePage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loadHomePage.js */ \"./src/loadHomePage.js\");\n/* harmony import */ var _loadContactPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadContactPage.js */ \"./src/loadContactPage.js\");\n/* harmony import */ var _loadMenuPage_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./loadMenuPage.js */ \"./src/loadMenuPage.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _scroll_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scroll.js */ \"./src/scroll.js\");\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n  \r\n    \r\n    (0,_loadHomePage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    \r\n    const Mode = document.querySelector('.material-symbols-outlined');\r\n    const navbar = document.querySelector('#navlist')\r\n    const modal = document.querySelector('.modal__header');\r\n\r\n    Mode.addEventListener('click', () => {\r\n       if (Mode.innerText == \"light_mode\"){\r\n        Mode.innerText = \"dark_mode\";\r\n        document.body.style.backgroundColor = \"black\";\r\n        document.body.style.color = \"white\";\r\n        const navbarElements = navbar.querySelectorAll('*');\r\n            navbarElements.forEach(element => {\r\n                element.style.color = \"white\";\r\n            });\r\n        modal.style.color = \"black\"\r\n    } else {\r\n        Mode.innerText = \"light_mode\";\r\n        document.body.style.backgroundColor = \"white\";\r\n        document.body.style.color = \"#121212\";\r\n        const navbarElements = navbar.querySelectorAll('*');\r\n            navbarElements.forEach(element => {\r\n                element.style.color = \"#121212\";\r\n            });\r\n    }\r\n       });\r\n\r\n    const headers = [\"Tres Hot Plates\",\"Taste the Sizzle\",\"Crave. Sizzle. Enjoy\",\"Heat Meets Flavor\"];\r\n    let currentIndex = 0;\r\n    let charIndex = 0;\r\n    let typingInterval;\r\n\r\n    function typeHeader() {\r\n        const headerElement = document.querySelector(\".hero-title\");\r\n        if (headerElement) {\r\n            if (charIndex < headers[currentIndex].length) {\r\n                headerElement.textContent += headers[currentIndex].charAt(charIndex);\r\n                charIndex++;\r\n            } else {\r\n                clearInterval(typingInterval);\r\n                setTimeout(() => {\r\n                    charIndex = 0;\r\n                    currentIndex = (currentIndex + 1) % headers.length;\r\n                    headerElement.textContent = '';\r\n                    typingInterval = setInterval(typeHeader, 100); \r\n                }, 1000); \r\n            }\r\n        }\r\n    }\r\n\r\n    typingInterval = setInterval(typeHeader, 100);\r\n    \r\n    const homeButton = document.getElementById('home-button');\r\n    const contactButton = document.getElementById('contact-button');\r\n    const menuButton = document.getElementById('menu-button');\r\n\r\n    homeButton.addEventListener('click', () => {\r\n        (0,_loadHomePage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n        (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    });\r\n\r\n    contactButton.addEventListener('click', () => {\r\n        (0,_loadContactPage_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n        (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    });\r\n\r\n    menuButton.addEventListener('click', () => {\r\n        (0,_loadMenuPage_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n        (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    });\r\n});\r\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loadHomePage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loadHomePage.js */ \"./src/loadHomePage.js\");\n/* harmony import */ var _loadContactPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadContactPage.js */ \"./src/loadContactPage.js\");\n/* harmony import */ var _loadMenuPage_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./loadMenuPage.js */ \"./src/loadMenuPage.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _scroll_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scroll.js */ \"./src/scroll.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n  \r\n    \r\n    (0,_loadHomePage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    \r\n    const Mode = document.querySelector('.material-symbols-outlined');\r\n    const navbar = document.querySelector('#navlist')\r\n    const modal = document.querySelector('.modal__header');\r\n\r\n    Mode.addEventListener('click', () => {\r\n       if (Mode.innerText == \"light_mode\"){\r\n        Mode.innerText = \"dark_mode\";\r\n        document.body.style.backgroundColor = \"black\";\r\n        document.body.style.color = \"white\";\r\n        const navbarElements = navbar.querySelectorAll('*');\r\n            navbarElements.forEach(element => {\r\n                element.style.color = \"white\";\r\n            });\r\n        modal.style.color = \"black\"\r\n    } else {\r\n        Mode.innerText = \"light_mode\";\r\n        document.body.style.backgroundColor = \"white\";\r\n        document.body.style.color = \"#121212\";\r\n        const navbarElements = navbar.querySelectorAll('*');\r\n            navbarElements.forEach(element => {\r\n                element.style.color = \"#121212\";\r\n            });\r\n    }\r\n       });\r\n\r\n    const headers = [\"Tres Hot Plates\",\"Taste the Sizzle\",\"Crave. Sizzle. Enjoy\",\"Heat Meets Flavor\"];\r\n    let currentIndex = 0;\r\n    let charIndex = 0;\r\n    let typingInterval;\r\n\r\n    function typeHeader() {\r\n        const headerElement = document.querySelector(\".hero-title\");\r\n        if (headerElement) {\r\n            if (charIndex < headers[currentIndex].length) {\r\n                headerElement.textContent += headers[currentIndex].charAt(charIndex);\r\n                charIndex++;\r\n            } else {\r\n                clearInterval(typingInterval);\r\n                setTimeout(() => {\r\n                    charIndex = 0;\r\n                    currentIndex = (currentIndex + 1) % headers.length;\r\n                    headerElement.textContent = '';\r\n                    typingInterval = setInterval(typeHeader, 100); \r\n                }, 1000); \r\n            }\r\n        }\r\n    }\r\n\r\n    typingInterval = setInterval(typeHeader, 100);\r\n    \r\n    const homeButton = document.getElementById('home-button');\r\n    const contactButton = document.getElementById('contact-button');\r\n    const menuButton = document.getElementById('menu-button');\r\n\r\n    homeButton.addEventListener('click', () => {\r\n        (0,_loadHomePage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n        (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    });\r\n\r\n    contactButton.addEventListener('click', () => {\r\n        (0,_loadContactPage_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n        (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    });\r\n\r\n    menuButton.addEventListener('click', () => {\r\n        (0,_loadMenuPage_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n        (0,_scroll_js__WEBPACK_IMPORTED_MODULE_4__.initializeScrollReveal)();\r\n    });\r\n});\r\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHomePage)\n/* harmony export */ });\nfunction loadHomePage() {\r\n    function createElement(tag, className = '', textContent = '') {\r\n      const element = document.createElement(tag);\r\n      if (className) element.className = className;\r\n      if (textContent) element.textContent = textContent;\r\n      return element;\r\n    }\r\n  \r\n    function appendChildren(parent, ...children) {\r\n      children.forEach(child => parent.appendChild(child));\r\n    }\r\n  \r\n    const content = document.getElementById('content');\r\n    content.innerHTML = ''; \r\n  \r\n    const section = createElement(\"section\", \"hero-section\");\r\n    content.appendChild(section);\r\n  \r\n    const heroContainer = createElement(\"div\", \"hero-container\");\r\n    section.appendChild(heroContainer);\r\n  \r\n    const heroTextContainer = createElement(\"div\", \"hero-text\");\r\n    const heroImgContainer = createElement(\"div\", \"hero-img-container\");\r\n    appendChildren(heroContainer, heroTextContainer, heroImgContainer);\r\n    const heroTitle = createElement(\"h1\", \"hero-title\", \"\");\r\n    const heroprice = createElement(\"h2\", \"hero-subtitle\", \"The Only Sizzling Food in Town!\");\r\n    const caption = createElement(\"p\", \"hero-caption\", \"Discover the ultimate dining experience at Tres Hot Plates!\");\r\n    const orderBtn = createElement(\"button\", \"orderBtn\", \"Order Now\");\r\n    const icon = createElement(\"span\", \"material-icons\", \"restaurant_menu\");\r\n    orderBtn.prepend(icon);\r\n    appendChildren(heroTextContainer, heroTitle, heroprice, caption, orderBtn);\r\n  \r\n    const fancyBorder = createElement(\"div\", \"fancy-border-radius\");\r\n    const heroImg = createElement(\"img\", \"heroImg\");\r\n    heroImg.src = \"/src/images/hero-image.png\";\r\n    const gravy = createElement(\"img\", \"gravy\");\r\n    gravy.src = \"/src/images/gravy.png\";\r\n    appendChildren(heroImgContainer, fancyBorder, heroImg, gravy);\r\n  }\r\n\r\n  \n\n//# sourceURL=webpack://restaurant/./src/loadHomePage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHomePage)\n/* harmony export */ });\n/* harmony import */ var _images_hero_image_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/hero-image.png */ \"./src/images/hero-image.png\");\n/* harmony import */ var _images_gravy_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/gravy.png */ \"./src/images/gravy.png\");\n\r\n\r\n\r\nfunction loadHomePage() {\r\n    function createElement(tag, className = '', textContent = '') {\r\n      const element = document.createElement(tag);\r\n      if (className) element.className = className;\r\n      if (textContent) element.textContent = textContent;\r\n      return element;\r\n    }\r\n  \r\n    function appendChildren(parent, ...children) {\r\n      children.forEach(child => parent.appendChild(child));\r\n    }\r\n  \r\n    const content = document.getElementById('content');\r\n    content.innerHTML = ''; \r\n  \r\n    const section = createElement(\"section\", \"hero-section\");\r\n    content.appendChild(section);\r\n  \r\n    const heroContainer = createElement(\"div\", \"hero-container\");\r\n    section.appendChild(heroContainer);\r\n  \r\n    const heroTextContainer = createElement(\"div\", \"hero-text\");\r\n    const heroImgContainer = createElement(\"div\", \"hero-img-container\");\r\n    appendChildren(heroContainer, heroTextContainer, heroImgContainer);\r\n    const heroTitle = createElement(\"h1\", \"hero-title\", \"\");\r\n    const heroprice = createElement(\"h2\", \"hero-subtitle\", \"The Only Sizzling Food in Town!\");\r\n    const caption = createElement(\"p\", \"hero-caption\", \"Discover the ultimate dining experience at Tres Hot Plates!\");\r\n    const orderBtn = createElement(\"button\", \"orderBtn\", \"Order Now\");\r\n    const icon = createElement(\"span\", \"material-icons\", \"restaurant_menu\");\r\n    orderBtn.prepend(icon);\r\n    appendChildren(heroTextContainer, heroTitle, heroprice, caption, orderBtn);\r\n  \r\n    const fancyBorder = createElement(\"div\", \"fancy-border-radius\");\r\n    const heroImg = createElement(\"img\", \"heroImg\");\r\n    heroImg.src = _images_hero_image_png__WEBPACK_IMPORTED_MODULE_0__;\r\n    const gravy = createElement(\"img\", \"gravy\");\r\n    gravy.src = _images_gravy_png__WEBPACK_IMPORTED_MODULE_1__;\r\n    appendChildren(heroImgContainer, fancyBorder, heroImg, gravy);\r\n  }\r\n\r\n  \n\n//# sourceURL=webpack://restaurant/./src/loadHomePage.js?");
 
 /***/ }),
 
@@ -157,6 +157,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   initializeScrollReveal: () => (/* binding */ initializeScrollReveal)\n/* harmony export */ });\nfunction initializeScrollReveal() {\r\n    const sr = ScrollReveal({\r\n      origin: 'top',\r\n      distance: '60px',\r\n      duration: 2500,\r\n      delay: 200,\r\n    });\r\n  \r\n    sr.reveal(`.navbar`);\r\n    sr.reveal(`.hero-text`,{ delay: 700, distance: '100px', origin: 'bottom' });\r\n    sr.reveal(`.hero-img-container`, { delay: 900, distance: '100px', origin: 'right' });\r\n    sr.reveal(`.menu-section`);\r\n    sr.reveal(`.sub-section`);\r\n    sr.reveal(`.menuHeader`,{delay: 100});\r\n    sr.reveal(`.caption`);\r\n    sr.reveal(`.card`, { interval: 200 });\r\n    sr.reveal(`.orderBtn`, { interval: 200, delay: 1000 });\r\n    sr.reveal('.contact-Us',{distance: '100px', origin: 'left' });\r\n    sr.reveal(`.contactUsHero-container`,{distance: '100px', origin: 'right' });\r\n  }\r\n  \n\n//# sourceURL=webpack://restaurant/./src/scroll.js?");
+
+/***/ }),
+
+/***/ "./src/images/gravy.png":
+/*!******************************!*\
+  !*** ./src/images/gravy.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e4fc8ccc3a224835c303.png\";\n\n//# sourceURL=webpack://restaurant/./src/images/gravy.png?");
+
+/***/ }),
+
+/***/ "./src/images/hero-image.png":
+/*!***********************************!*\
+  !*** ./src/images/hero-image.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"609a2247a0fb89303164.png\";\n\n//# sourceURL=webpack://restaurant/./src/images/hero-image.png?");
 
 /***/ })
 
@@ -211,6 +231,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -225,6 +257,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

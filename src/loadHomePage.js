@@ -1,3 +1,6 @@
+import heroImage from './images/hero-image.png'
+import gravyImage from './images/gravy.png';
+
 export default function loadHomePage() {
     function createElement(tag, className = '', textContent = '') {
       const element = document.createElement(tag);
@@ -32,9 +35,9 @@ export default function loadHomePage() {
   
     const fancyBorder = createElement("div", "fancy-border-radius");
     const heroImg = createElement("img", "heroImg");
-    heroImg.src = "/src/images/hero-image.png";
+    heroImg.src = heroImage;
     const gravy = createElement("img", "gravy");
-    gravy.src = "/src/images/gravy.png";
+    gravy.src = gravyImage;
     appendChildren(heroImgContainer, fancyBorder, heroImg, gravy);
   }
 
