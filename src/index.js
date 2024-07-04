@@ -5,7 +5,6 @@ import './styles.css';
 import { initializeScrollReveal } from './scroll.js';
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
   
     
