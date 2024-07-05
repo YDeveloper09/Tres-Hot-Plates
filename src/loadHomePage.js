@@ -1,6 +1,6 @@
 import heroImage from './images/hero-image.png'
 import gravyImage from './images/gravy.png';
-
+import logo from './images/logo2.png';
 export default function loadHomePage() {
     function createElement(tag, className = '', textContent = '') {
       const element = document.createElement(tag);
@@ -12,6 +12,20 @@ export default function loadHomePage() {
     function appendChildren(parent, ...children) {
       children.forEach(child => parent.appendChild(child));
     }
+
+    
+    const navbar = document.querySelector(".navbar");
+    
+    // Check if the logo is already appended
+    if (!document.getElementById('imgLogo')) {
+        const logoImg = createElement("img");
+        logoImg.id = "imgLogo";
+        const logoContainer = createElement("div", "logo");
+        logoImg.src = logo;
+        navbar.prepend(logoContainer);
+        logoContainer.appendChild(logoImg);
+    }
+
   
     const content = document.getElementById('content');
     content.innerHTML = ''; 

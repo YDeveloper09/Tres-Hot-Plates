@@ -1,4 +1,11 @@
 import gP from './images/garlic-pepper.png'
+import sCp from './images/pork.png'
+import bGs from './images/burgersteak.png'
+import sCsge from './images/sausage.png'
+import sSg from './images/sisig.png'
+import pNgp from './images/pork-beef.png'
+import bSs from './images/sausage-burger.png'
+
 export default function loadMenuPage() {
         function createElement(tag, className = '', textContent = '') {
           const element = document.createElement(tag);
@@ -41,7 +48,7 @@ export default function loadMenuPage() {
         const porkChopCard = createElement("div", "card");
         const pcdivImage = createElement("div", "image");
         const pcImage = createElement("img", "text");
-        pcImage.src = "/src/images/pork.png";
+        pcImage.src = sCp;
         appendChildren(pcdivImage, pcImage);
         const pcTitle = createElement("span", "title","Sizzling Pork Chop");
         const pcPrice = createElement("span", "price","P99.00");
@@ -51,7 +58,7 @@ export default function loadMenuPage() {
         const burgerCard = createElement("div", "card");
         const bgrdivImage = createElement("div", "image");
         const bgrImage = createElement("img", "text");
-        bgrImage.src = "/src/images/burgersteak.png";
+        bgrImage.src = bGs;
         appendChildren(bgrdivImage, bgrImage);
         const bgrTitle = createElement("span", "title","Sizzling Burger Steak");
         const bgrPrice = createElement("span", "price","P99.00");
@@ -61,7 +68,7 @@ export default function loadMenuPage() {
         const sausageCard = createElement("div", "card");
         const sausagedivImage = createElement("div", "image");
         const sausageImage = createElement("img", "text");
-        sausageImage.src = "/src/images/sausage.png";
+        sausageImage.src = sCsge;
         appendChildren(sausagedivImage, sausageImage);
         const sausageTitle = createElement("span", "title","Sizzling Sausage");
         const sausagePrice = createElement("span", "price","P99.00");
@@ -80,7 +87,7 @@ export default function loadMenuPage() {
         const comboOneCard = createElement("div", "card");
         const comboOnedivImage = createElement("div", "image");
         const comboOneImage = createElement("img", "text");
-        comboOneImage.src = "/src/images/sisig.png";
+        comboOneImage.src = sSg;
         appendChildren(comboOnedivImage, comboOneImage);
         const comboOneTitle = createElement("span", "title","Sizzling Sisig");
         const comboOnePrice = createElement("span", "price","P99.00");
@@ -90,7 +97,7 @@ export default function loadMenuPage() {
         const comboTwoCard = createElement("div", "card");
         const comboTwodivImage = createElement("div", "image");
         const comboTwoImage = createElement("img", "text");
-        comboTwoImage.src = "/src/images/pork-beef.png";
+        comboTwoImage.src = pNgp;
         appendChildren(comboTwodivImage, comboTwoImage);
         const comboTwoTitle = createElement("span", "title","Sizzling Pork and Garlic Pepper Beef");
         const comboTwoPrice = createElement("span", "price","P99.00");
@@ -100,7 +107,7 @@ export default function loadMenuPage() {
         const comboThirdCard = createElement("div", "card");
         const comboThirddivImage = createElement("div", "image");
         const comboThirdImage = createElement("img", "text");
-        comboThirdImage.src = "/src/images/sausage-burger.png";
+        comboThirdImage.src = bSs;
         appendChildren(comboThirddivImage, comboThirdImage);
         const comboThirdTitle = createElement("span", "title","Sizzling Burger Steak and Sausage");
         const comboThirdPrice = createElement("span", "price","P99.00");

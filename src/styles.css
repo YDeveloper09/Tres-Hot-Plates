@@ -4,7 +4,6 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    /* background-image: url(/src/images/food-background-1.jpg); */
     background-repeat: no-repeat;
     background-size:auto;
   }
@@ -342,6 +341,7 @@ nav button:hover::after {
   background-color: #fff;
   box-shadow: 0 15px 30px 0 rgba(0, 125, 171, 0.15);
   border-radius: 10px;
+  color: black;
 }
 
 .modal__header {

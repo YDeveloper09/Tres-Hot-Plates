@@ -1,3 +1,4 @@
+import HeroImg from './images/contactHero.png';
 export default function loadContactPage() {
     function createElement(tag, className = '', textContent = '') {
       const element = document.createElement(tag);
@@ -25,7 +26,7 @@ export default function loadContactPage() {
   
 
     const contactHeroImg = createElement("img", "heroImg");
-    contactHeroImg.src = "/src/images/contactHero.png";
+    contactHeroImg.src = HeroImg;
     appendChildren(contactImageContainer, contactHeroImg);
 
 
